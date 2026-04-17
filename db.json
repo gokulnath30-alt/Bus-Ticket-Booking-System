@@ -1,0 +1,175 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@gmail.com",
+      "password": "1111",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "email": "operator@gmail.com",
+      "password": "1234",
+      "role": "operator"
+    },
+    {
+      "name": "gopi",
+      "email": "gopi@gmail.com",
+      "password": "12345",
+      "role": "user",
+      "id": "bRs-VaWbN50"
+    },
+    {
+      "name": "gokul",
+      "email": "gokul@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "id": "cY1NVLR5iPg"
+    },
+    {
+      "name": "raja",
+      "email": "raja@gmail.com",
+      "password": "12345",
+      "role": "user",
+      "id": "3RGjYgszXdU"
+    },
+    {
+      "name": "praveen",
+      "email": "praveen@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "id": "jzXBarJ8HdI"
+    }
+  ],
+  "buses": [
+    {
+      "id": "bus1",
+      "name": "KPN Travels",
+      "operatorId": "ADMIN",
+      "route": "Chennai to Madurai",
+      "schedule": "2026-04-15T22:00",
+      "fare": 850,
+      "status": "Active",
+      "totalSeats": 40,
+      "availableSeats": 38
+    },
+    {
+      "id": "bus2",
+      "name": "SRM Transports",
+      "operatorId": "ADMIN",
+      "route": "Bangalore to Chennai",
+      "schedule": "2026-04-16T21:30",
+      "fare": 1200,
+      "status": "Active",
+      "totalSeats": 40,
+      "availableSeats": 34
+    },
+    {
+      "id": "bus3",
+      "name": "YBM Travels",
+      "operatorId": "ADMIN",
+      "route": "Coimbatore to Chennai",
+      "schedule": "2026-04-17T20:15",
+      "fare": 950,
+      "status": "Active",
+      "totalSeats": 40,
+      "availableSeats": 40
+    },
+    {
+      "name": "KPN travels",
+      "operatorId": "ADMIN",
+      "route": "Chennai to Madurai",
+      "schedule": "2026-04-15T08:00",
+      "fare": 850,
+      "status": "Active",
+      "totalSeats": 40,
+      "availableSeats": 40,
+      "id": "3dHTRAxm8QU"
+    },
+    {
+      "name": "KOMBAN Travels",
+      "operatorId": "ADMIN",
+      "route": "Salem to Kerala",
+      "schedule": "2026-04-17T09:00",
+      "fare": 700,
+      "status": "Active",
+      "totalSeats": 40,
+      "availableSeats": 20,
+      "id": "cole1bbeybI"
+    }
+  ],
+  "bookings": [
+    {
+      "busId": "bus1",
+      "busName": "KPN Travels",
+      "route": "Chennai to Madurai",
+      "userId": "",
+      "seats": [
+        "Seat 1",
+        "Seat 3"
+      ],
+      "status": "Active",
+      "fareTotal": 1100,
+      "bookedAt": "2026-04-13T15:53:54.552Z",
+      "id": "CWimIi6JIDs"
+    },
+    {
+      "busId": "cole1bbeybI",
+      "busName": "KOMBAN Travels",
+      "route": "Salem to Kerala",
+      "userId": "cY1NVLR5iPg",
+      "email": "gokul@gmail.com",
+      "customerEmail": "gokul@gmail.com",
+      "customerName": "gokul",
+      "seats": [
+        "Seat 17",
+        "Seat 7",
+        "Seat 11",
+        "Seat 1",
+        "Seat 21",
+        "Seat 27",
+        "Seat 31",
+        "Seat 37",
+        "Seat 3",
+        "Seat 9",
+        "Seat 15",
+        "Seat 13",
+        "Seat 19",
+        "Seat 25",
+        "Seat 23",
+        "Seat 29",
+        "Seat 35",
+        "Seat 33",
+        "Seat 39",
+        "Seat 5"
+      ],
+      "status": "Active",
+      "fareTotal": 11000,
+      "bookedAt": "2026-04-17T09:04:13.802Z",
+      "id": "cNAv3uNNr_Y"
+    },
+    {
+      "busId": "bus2",
+      "busName": "SRM Transports",
+      "route": "Bangalore to Chennai",
+      "userId": "cY1NVLR5iPg",
+      "email": "gokul@gmail.com",
+      "customerEmail": "gokul@gmail.com",
+      "customerName": "gokul",
+      "seats": [
+        "Seat 6"
+      ],
+      "status": "Active",
+      "fareTotal": 550,
+      "bookedAt": "2026-04-17T09:05:34.130Z",
+      "id": "shY934NoDgY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

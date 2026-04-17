@@ -1,0 +1,215 @@
+.container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  padding: 3rem 1.5rem;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.busContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 350px;
+  margin: 0 auto 3rem auto;
+  background: #f1f5f9;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid #cbd5e1;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seat {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: #cbd5e1; /* Default empty */
+}
+
+.seat:not(.seatBooked):hover {
+  transform: scale(1.05);
+  background-color: #94a3b8;
+}
+
+.seatBooked {
+  background-color: #ef4444;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.seatSelected {
+  background-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.4);
+}
+
+.aisle {
+  width: 30px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.summarySection {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #cbd5e1;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.actionBtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.actionBtn:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.actionBtn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Payment Form */
+.paymentForm {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.inputRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputRow .inputGroup {
+  flex: 1;
+}
+
+.successState {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.checkIcon {
+  font-size: 5rem;
+  color: #10b981;
+  margin-bottom: 1rem;
+}
